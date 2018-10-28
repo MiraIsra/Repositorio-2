@@ -7,7 +7,7 @@ echo "Conexion realizada";
        exit;
     }*/
 
-$con = mysqli_connect("localhost", "root", "D1egoarmando", "Sistema");
+$con = mysqli_connect("localhost", "root", "contraseña", "Sistema");
 $nr="";
 if (!$con){
 	die ('No se puede conectar con bbdd: ' . mysqli_error());
@@ -21,11 +21,9 @@ $pass= $_POST["txtpassword"];
 $query=("SELECT view FROM `Sistema`.`Users` "
          . "WHERE usuario='".$nombre."' and "
          . "contrasenya='".$pass."'");
-/*$query=("SELECT view FROM `Users` WHERE usuario='camarauser' and contrasenya='V1gila'");*/
-/*echo $query;*/
+
 
 $rs = mysqli_query($con, $query);
-/*echo "  rs:" . $rs . "   ";*/
 $filas = 0;
 while ($row = mysqli_fetch_array ($rs)){
 	$nr.= $row["view"];
@@ -41,7 +39,6 @@ if ($filas == 0){
 	echo "El usuario y/o contraseña no son correctos.";
 }
 else {
-     echo "View/View" . $nr . ".html";
      header("Location:./View/View". $nr .".html");
 
 }
