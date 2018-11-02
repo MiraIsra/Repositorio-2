@@ -7,7 +7,7 @@ echo "Conexion realizada";
        exit;
     }*/
 
-$con = mysqli_connect("localhost", "root", "D1egoarmando", "Sistema");
+$con = mysqli_connect("", "", "", "");
 $nr="";
 if (!$con){
 	die ('No se puede conectar con bbdd: ' . mysqli_error());
