@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="es-ES">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+		<title>Datos regleta inteligente :: Isra Mira</title>
+		<META NAME="AUTHOR" CONTENT="Isra Mira">	
+	</head>
+	<body>
+		<h1> Datos regleta inteligente </h1>
+		<h3> Autor: Isra Mira. </h3>
+		
+		<?php echo date ('Y-m-d H:i:s'); ?>
+<!--		<?php $est_actual = '0' ?>
+		<?php echo $est_actual; ?> 
+		
+		<label for="est_actual">Estado actual: </label>
+		
+		<?php echo $est_actual ?> 
+		
+		<?php 
+		if ($est_actual = 1){
+			echo "<img src='../../images/on.png'  width='12' height='12'";
+			echo "border=0";
+			echo "";
+  		} else{  echo "Entro en el else";
+			 echo "<img src='../../images/off.png' width='42' height='42'"; }?>
+		
+
+	        <form action="./cambiaEstado.php" method="POST">
+        		<input type="hidden"  name="est_actual" value="est_actual" />
+        	</form>
+
+
+		<label for="hora">Ultima modificacíon: </label>
+
+		<!-- <div id="chartTemp" style="height: 400px; margin: 0 auto"></div>
+		<div id="chartHum" style="height: 400px; margin: 0 auto"></div>
+		<div id="chartPres" style="height: 400px; margin: 0 auto"></div>
+		<div id="chartIlu" style="height: 400px; margin: 0 auto"></div> -->
+	</body>
+
+	<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript" ></script>
+
+
+	<script type="text/javascript">
+		$( document ).ready (function () {
+
+			// First time
+			EnviarPeriodo();
+		});
+	</script>
+	-->
+</html>
+
