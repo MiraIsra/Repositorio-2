@@ -6,11 +6,28 @@
 		<META NAME="AUTHOR" CONTENT="Isra Mira">	
 	</head>
 	<body>
-		<h1> Datos regleta inteligente </h1>
+	    
+	    <p>Estado actual:</p>
+
+	    <?php
+		include 'selector.php';
+		echo "Estado actual:  $est_actual";
+		echo "Estado deseado: $est_deseado";
+		echo "Ultimo cambio: $hora";		
+	    ?>
+	    <form action="./cambiarEstado.php" method="POST">
+                <input type="text" placeholder="usuario" name="txtusuario" />
+                <input type="password" placeholder="contraseña" name="txtpassword" />
+                <input type="submit" value="Entrar" name="entrar" />
+            </form>
+
+
+
+<!--		<h1> Datos regleta inteligente </h1>
 		<h3> Autor: Isra Mira. </h3>
 		
 		<?php echo date ('Y-m-d H:i:s'); ?>
-<!--		<?php $est_actual = '0' ?>
+		<?php $est_actual = '0' ?>
 		<?php echo $est_actual; ?> 
 		
 		<label for="est_actual">Estado actual: </label>
