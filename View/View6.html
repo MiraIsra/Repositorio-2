@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+<?php
+session_start();
+
+        if (isset($_GET["cerrar"])){
+            session_unset();
+            session_destroy();
+            unset($_SESSION["id"]);
+        }
+
+        if (!isset($_SESSION["id"])){
+            header("location:../ingresar.php");
+        }
+
+?>
+
+<p>
+<a href="../Proyectos/injusa/injusa.php">
+<img border="0" alt="Injusa" src="../images/logo_injusa.png" width="150" height="150">
+</a>
+</p>
+
+
+<a href="../index.html?cerrar=true">Cerrar Sesion</a>
+</body>
+</html>
+

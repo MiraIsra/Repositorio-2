@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="es-ES">
+<style>
+body {font-family: Arial;}
+
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
+
+
+        <head>
+                <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+                <title> AgroCasa </title>
+                <META NAME="AUTHOR" CONTENT="Isra Mira">
+        </head>
+        <body>
+
+<h2>AgroCasa</h2>
+<a>
+<img border="0" alt="Agro casa" src="./src/inicio.png" width="800" height="300">
+</a>
+
+<p> Te ponemos en contacto con agricultores para que realices tus compras directamente con ellos para que te proporcionen sus mejores productos directamente desde la huerta. Del transporte ya nos encargamos nosotros. </p>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Buscar')">Buscar</button>
+  <button class="tablinks" onclick="openCity(event, 'Contacto')">Contacto</button>
+  <button class="tablinks" onclick="openCity(event, 'SobreNosotros')">Sobre nosotros</button>
+</div>
+
+<div id="Buscar" class="tabcontent">
+  <h3> Selecciona el tipo de fruta que quieres, ponte en contacto con el agricultor que la vende y a esperar su llegada! </h3>
+  <!--<p>London is the capital city of England.</p>-->
+  <p> Categoria <p>
+  <div class="caja">
+    <select name="Datos" id="Datos" onchange=""> <!--EnviarPeriodo(document.getElementById('Datos').value)">-->
+    <option value="Todas">Todas</option>
+    <option value="Citrico">Citricos</option>
+    <option value="FrutaGrano">Frutas de grano</option>
+    <option value="Exoticas">Exoticas</option>
+    <option value="otrasFrutas">Otras frutas</option>
+    <option value="Hortalizas">Hortalizas</option>
+    <option value="Verduras">Verduras</option>
+    </select>
+  </div>
+
+  <div>
+    <p> Naranjas para zumo <p>
+    <p>
+    <div>
+    <a href="./naranjas.html">
+        <img border="0" alt="Agro casa" src="./src/naranjas_para_zumo.png" width="200" height="200">	
+    </a>
+       
+      Es una de las frutas más populares y más saludables.
+      Como es rica en vitamina C es ideal para combatir los resfriados, también es antioxidante, favorece la eliminación de grasas y ayuda a prevenir la arterosclerosis. Aunque no se recomienda a personas con problemas digestivos: gastritis, hernia de hiato, acidez o úlceras.
+      Su temporada es de Enero a Mayo.
+      Existen tres variedades básicas:
+    	La naranja dulce es la más conocida y la de consumo habitual.
+    	La naranja amarga la utilizamos para la elabboración de mermeladas.
+    	La naranja Sanguinelli, de color rojo anaranjado, usada para zumo.
+
+      El  zumo de naranja es ideal para empezar bien el día con el desayuno, ya que si se toma en ayunas nos ayuda a eliminar las sustancias tóxicas y previene muchas enfermedades.
+     </div>
+    </p>
+  </div>
+  <div>
+    <p> Limones <p>
+    <a href="./naranjas.html">
+       <img border="0" alt="Agro casa" src="./src/limones.png" width="200" height="200">
+    </a>
+
+  </div>
+  <div>
+    <p> Uva de mesa <p>
+    <a href="./naranjas.html">
+       <img border="0" alt="Agro casa" src="./src/uva_de_mesa_vinalopo.png" width="200" height="200">
+    </a>
+
+  </div>
+
+
+
+</div>
+<div id="Contacto" class="tabcontent">
+  <h3>Contacto</h3>
+  <p> ¿Dudas? ¿Sugerencias? ¿Quieres recibir el pedido a una hora determinada? ¿Quieres sugerir una forma de pago distinta a Paypal? </p>
+  <p> Por favor no dudes en ponerte en contacto con nosotros por Whatsapp o llamando a este numero de telefono:.</p>
+  <p> Telefono: 666666664 </p> 
+  <p> Whatsapp: 666666664 </p>
+</div>
+
+<div id="SobreNosotros" class="tabcontent">
+  <h3>Sobre nosotros</h3>
+  <p>Del camp a t'ha casa es una red social que se encarga de poner en contacto agricultores que quieren vender sus cosechas con consumidores concienciados con consumo de frutas. Son sabidos los beneficios del consumo de frutas para las personas y la sostenibilidad de consumir este tipo de alimentos. Nosotros promovemos que esta transacción se haga directamente con el agricultor evitando: </p>
+  <p> 1. En encarecimiento al que se ven sometidos estos productos por los intermediarios. </p>
+  <p> 2. Los productos artificiales que los agricultores están obligados a utilizar para que sus productos cumplan con las demandas de las grandes superfices para que estas admitan el producto. </p>
+  <p> Y garantizando: </p>
+  <p> 1. Libertad para los agricultores en la venta final de sus productos.</p>
+  <p> 2. Flexibilidad horaria y geográfica en el envio de la mercancía. </p>
+  <p> 3. Calidad del producto. Desde la recogida en el campo hasta la entrega en casa pasarán menos de 24 horas. Asegurado. </p>
+  <p> 4. Defensa del producto por el propio agricultor. Le haces la compra a el mismo agricultor, sin intermediarios. Comprobarás que ellos son los primeros que quieren demostrar que tienen productos de calidad. </p>
+
+  <p></p>
+  <p></p>
+  <p> Nosotros somos unas personas concienciadas y responsables que simplemente os ponemos en contacto y gestionamos el envío. Tu escoge la fruta, espera y disfruta :) </p>
+
+
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+<!--                <h1> Datos estacion meteorologica </h1>
+                <h3> Autor: Isra Mira. </h3>
+
+                <?php echo date ('Y-m-d H:i:s'); ?>
+
+                <div class="caja">
+                         <select name="Estacion" id="Estacion">
+                                 <option>1 - Valencia</option>
+                         </select>
+                </div>
+
+                <div class="caja">
+                         <select name="Datos" id="Datos" onchange="EnviarPeriodo(document.getElementById('Datos').value)">
+                                 <option value="Dia">Ultimo dia</option>
+                                 <option value="Hora">Ultima hora</option>
+                                 <option value="Semana">Ultima semana</option>
+                                 <option value="Mes">Ultimo mes</option>
+                                 <option value="Ano">Ultimo año</option>
+                         </select>
+                </div>
+
+                <form action="data.php" method="post">
+                        <input type="submit" value="Descargar datos ultima semana">
+                </form>
+
+                <div id="chartTemp" style="height: 400px; margin: 0 auto"></div>
+                <div id="chartHum" style="height: 400px; margin: 0 auto"></div>
+                <div id="chartPres" style="height: 400px; margin: 0 auto"></div>
+                <div id="chartIlu" style="height: 400px; margin: 0 auto"></div>
+        </body>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript" ></script>
+        <script src="http://code.highcharts.com/highcharts.js" type="text/javascript" ></script>
+        <script src="http://code.highcharts.com/modules/exporting.js" type="text/javascript" ></script>
+        <script type="text/javascript" src="data.js?v=3" ></script>
+
+        <script type="text/javascript">
+                $( document ).ready (function () {
+
+                        // First time
+                        EnviarPeriodo();
+                });
+        </script>
+-->
+</html>
+
