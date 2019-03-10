@@ -39,7 +39,7 @@
 
                 if (!$con)
                     die ("Can't connect: ". mysqli_error ());
-                $sql = "SELECT dia, hora, minutos, activo FROM `programacion` WHERE id_enchufe=0";
+                $sql = "SELECT dia, hora, minutos, activo FROM `programacion` WHERE id_enchufe=0 ORDER BY dia";
                 $datos = mysqli_query($con, $sql);
 		
 	    ?>
