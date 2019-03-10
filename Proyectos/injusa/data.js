@@ -43,6 +43,8 @@ function EnviarPeriodo(date_range){
 				{
 					y_values_pres.push(parseFloat(data[i]));
 					switchCicles = false;
+					switchCons = true;
+					switch1 = true;
 					//switchIlum = true;
 				}
 				/*else if (switchIlum == true)
@@ -127,11 +129,11 @@ function EnviarPeriodo(date_range){
             },
             yAxis : {
                 title : {
-                    text : 'Modos de trabajo'
+                    text : 'Modos de trabajo: 1 - Apagada, 2 - Manual, 3 - Automatica'
                 },
                 labels : {
                     formatter : function() {
-                        return this.value + ' 1 - Apagada, 2 - Manual, 3 - Automatica'
+                        return this.value// + ' 1 - Apagada, 2 - Manual, 3 - Automatica'
                     }
                 }
             },

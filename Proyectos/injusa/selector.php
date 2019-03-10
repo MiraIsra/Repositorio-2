@@ -12,9 +12,9 @@
     $maq_data = mysqli_fetch_array($maquinas)['n_maq'];
     //echo "maquinas:" . $maq_data;
     //echo "Voy a hacer la query";
-    $query = "SELECT id, timestamp, id_maquina, id_modo, fase1, fase2, fase3 FROM `Consumos` ORDER BY id DESC LIMIT ". $maq_data;
+    $query = "SELECT id, timestamp, id_maquina, id_modo, fase1, fase2, fase3, ciclos FROM `Consumos` ORDER BY id DESC LIMIT ". $maq_data;
     // Ejecutamos la instrucción
-    //echo "Query";
+    //echo "done";
     //echo $query;
     $datos = mysqli_query($con, $query);
     while($row = mysqli_fetch_array($datos)) {
@@ -27,9 +27,6 @@
 	$fase2 = $row['fase2'];
 	$fase3 = $row['fase3'];
     }
-    //echo $est_actual;
-    //echo "/";
-    //echo $est_deseado;
-
+    //echo $fase1;
     mysqli_close($con);
 ?>

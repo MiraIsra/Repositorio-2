@@ -29,7 +29,7 @@
 
                 //echo $s_actu;
             ?>
-            <form action="./detalles_1.php" method="POST">
+            <form action="./detalles.html?maq=1" method="POST">
                 <input type="submit" value="Ver detalles" name="cambiarEstado" />
             </form>
 
