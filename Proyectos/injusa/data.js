@@ -80,11 +80,11 @@ function EnviarPeriodo(date_range){
             },
             yAxis : {
                 title : {
-                    text : 'Kilowatios'
+                    text : 'Amperios'
                 },
                 labels : {
                     formatter : function() {
-                        return this.value + ' KW'
+                        return this.value + ' A'
                     }
                 }
             },

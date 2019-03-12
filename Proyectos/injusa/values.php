@@ -21,7 +21,7 @@ else if ($periodo=="Mes")
 else if ($periodo=="Ano")
         $datosDia = mysqli_query($con, "SELECT timestamp, id_maquina, id_modo, fase1, fase2, fase3, ciclos FROM `Consumos` WHERE timestamp >= now() - INTERVAL 1 YEAR ") or die ("Connection error");
 else
-        $datosDia = mysqli_query($con, "SELECT timestamp, id_maquina, id_modo, fase1, fase2, fase3, ciclos FROM `Consumos` WHERE timestamp >= now() - INTERVAL 1 DAY ") or die ("Connection error");
+        $datosDia = mysqli_query($con, "SELECT timestamp, id_maquina, id_modo, fase1, fase2, fase3, ciclos FROM `Consumos` WHERE timestamp >= now() - INTERVAL 1 HOUR ") or die ("Connection error");
 
 while($row = mysqli_fetch_array($datosDia)) {
 	//echo $row['timestamp'] . "/" . $row['id_maquina']. "/" . $row['id_modo']. "/" . $row['fase1']. "/" . $row['fase2']. "/" . $row['fase3']. "/"  . $row['ciclos']. "/"  ;
